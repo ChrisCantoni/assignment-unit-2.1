@@ -92,9 +92,9 @@ console.log(petStatus);
 //      console.log `mostPets` after the conditional has run.
 let mostPets;
 
-if (pets > friendsPets) {
+if (pets >= friendsPets) {
   mostPets = pets;
-} else {
+} else if (pets <= friendsPets) {
   mostPets = friendsPets;
 }
 console.log(mostPets);
@@ -117,6 +117,7 @@ switch (luckyNumber) {
   case 3 : luckyResult = 'Third is the one with the polka dot dress';
     break;
   default: luckyResult = 'Luck is what happens when preparation meets opportunity';
+    break;
 }
 console.log(luckyResult);
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
